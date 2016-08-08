@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/toolbarColor"
+        android:layout_alignParentTop="true"
+        android:id="@+id/mToolbarLayout"
+        android:padding="@dimen/activity_horizontal_margin">
+
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:id="@+id/mBackButton"
+            android:src="@drawable/back_arrow"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/mToolbarLayout"
+        android:padding="@dimen/activity_horizontal_margin">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24dp"
+            android:text="Maplecrest"
+            android:textColor="#0004ff"
+            android:id="@+id/mEnglish"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/mEnglish"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/llButtons">
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/mShare"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:src="@drawable/greenshare"
+                android:background="@null"
+                android:layout_alignTop="@+id/mSound"
+                android:layout_toLeftOf="@+id/mSound"
+                android:layout_toStartOf="@+id/mSound"
+                android:layout_marginRight="30dp"
+                android:layout_marginEnd="30dp" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/mSound"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:background="@null"
+                android:src="@drawable/sound"
+                android:layout_alignTop="@+id/mBookmark"
+                android:layout_toLeftOf="@+id/mBookmark"
+                android:layout_toStartOf="@+id/mBookmark"
+                android:layout_marginRight="30dp"
+                android:layout_marginEnd="30dp" />
+
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:id="@+id/mBookmark"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="مدينة أمريكية في ولاية نيو يورك"
+            android:textColor="#060606"
+            android:id="@+id/mArabic"
+            android:layout_below="@+id/llButtons"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="36dp" />
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>
